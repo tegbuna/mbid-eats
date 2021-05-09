@@ -1,5 +1,7 @@
 from django.db import models
 from autoslug import AutoSlugField
+from django.shortcuts import reverse
+
 
 # Create your models here.
 
@@ -23,3 +25,10 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.title
+
+
+# returns recipe object based on the slug
+    def get_url(self):
+        return reverse('details', kwargs={
+            'slug':self.slug,
+        })

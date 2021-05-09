@@ -14,27 +14,51 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Goblin+One&family=Kristi&family=Lato:wght@300;400&family=Open+Sans&family=Roboto&family=Ruslan+Display&display=swap" rel="stylesheet">
     <title>{{ title }}</title>
 </head>
 <body>
     <header>
     <div class='hero-section' id='box'>
-        <a href="https://imgur.com/vdaZhZl"><img src="https://i.imgur.com/vdaZhZl.png" title="source: imgur.com" /></a>
-        <div class='container'>
+        <div class='logo'>
+            <a href="https://imgur.com/1CTcbJJ"><img src="https://i.imgur.com/1CTcbJJ.png" title="source: imgur.com" /></a>
+        </div>
+                <br>
+        <div class="article">
+                <p>Authentic...Nigerian...Yumminess...Period.</p> <br>
+            </div>
+
+            <div class='container'>
             <nav class='nav-bar'>
                 <a href="{% url 'index' %}">Home | </a>  
-                <a href="{% url 'search' %}">Search | </a>
-                <a href="{% url 'details' %}">Details</a>
+                <a href="{% url 'search' %}">Search  </a>
             </nav>
         </div>
-    </div>
-    </header>
+    </header> 
+    <br>
 {% block content %}
 {% endblock %}
     <footer>
-         <p>[Social Media Links]</p> <br>
-         <p>Copyright &copy; 2021 | All Rights Reserved Mbid-Eats - Tasha L. Egbuna</p>
-       
+        <div class="col-md-12 text-center">
+            <h4 class="text-center font-weight-bold dark-grey-text mt-3 mb-3">
+               <strong>Share this post: </strong>
+            </h4>
+            <button type="button" class="btn btn-fb btn-sm">
+            <i class="fab fa-facebook-f left"></i> Facebook</button>
+            <!-- Twitter -->
+            <button type="button" class="btn btn-tw btn-sm">
+            <i class="fab fa-twitter left"></i> Twitter</button>
+            <!-- Google + -->
+            <button type="button" class="btn btn-gplus btn-sm">
+            <i class="fab fa-google-plus-g left"></i> Google +</button>
+         </div>
+        <br>
+         <p>Copyright &copy; 2021 | All Rights Reserved Mgbid-Eats - Tasha L. Egbuna</p>
     </footer>
     
 </body>
