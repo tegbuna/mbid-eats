@@ -15,7 +15,7 @@ ___
 ___
 
 ## Trello Board:
-![Trello] <a href='https://trello.com/b/TtVVWk8U/mbid-eats'>
+!<a href='https://trello.com/b/TtVVWk8U/mbid-eats'>
 
 ## Wireframe:
 ![Mgbid-eats][Imgur](https://i.imgur.com/3RabutX.png)
