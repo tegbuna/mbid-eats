@@ -1,29 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
-<main>
-      <h3> {{total}} Result(s) Found.</h3>
-                         {% for recipe in results %}
-                            <img src="{{recipe.image}}" alt="Card image cap">
-                            <!-- Card content -->
-                            <div class="card-body">
-                               <!-- Title -->
-                               <a href="{{recipe.get_url}}" class="black-text">{{recipe.title}}</a>
-                               <!-- Text -->
-                               <p class="card-title text-muted font-small mt-3 mb-2">{{recipe.description|safe|slice:":150"}}</p>
-                               <a type="button" class="btn btn-flat text-primary p-0 mx-0" href="{{recipe.get_url}}">Read more<i class="fa fa-angle-right ml-2"></i></a>
-                            </div>
-                         </div>
-                         <!-- Card -->
-                      </div>
-                      {% endfor %}
-    
-                     
-                   </div>
-                   <!-- Grid row -->
-    
-    
-                   <!--##############################Pagination################################-->
-     
+<main class="recipe-card">
+      <!-- <h3> {{total}} Result(s) Found</h3> -->
+      <!-- Title -->
+
+                         
+{% for recipe in results %}
+<br>
+<a href="{{recipe.get_url}}" class="subjects" style='text-decoration: none;'>{{recipe.title}}</a> <br>
+      <img class='rnd' src="{{recipe.image}}" alt="Card image cap" width="500"; height="250">
+      <br>
+      <!-- Card content -->
+<!-- Text -->
+<p>{{recipe.description|safe|slice:":300"}}</p>
+   <a type="button" href="{{recipe.get_url}}" style='font-size: 20px;'>Read more</a>
+   <br>
+{% endfor %}
+
                    <!-- Pagination -->
                    <nav class="my-4 flex-center">
                       <ul class="list-unstyled pagination pagination-circle pg-blue mb-0">
@@ -94,9 +87,9 @@
                       </ul>
                    </nav>
                    <!-- Pagination -->
-                   
-                   <div class="text-center mt-5">
-                     <a href="{% url 'index' %}">Back Home </a>  
+                   <br>
+                   <div>
+                  <a href="{% url 'index' %}" class='home-button'>Home<a>
                    </div>
           </div>
 

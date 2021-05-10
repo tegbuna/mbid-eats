@@ -1,27 +1,28 @@
 {% extends 'base.html' %}
 {% block content %}
-<main>
-<h1>#{{recipe.topic.title}}</h1>
+<main class='recipe-card'>
 
-<div class="card-body">
+   <!-- <h1 class='subjects'>{{recipe.topic.title}}</h1> -->
       <!-- Section heading -->
-   <h1>
-   <strong>{{recipe.title}}</strong>
+   <h1 class="subjects" style='font-size: 120px; color: black;'>
+      <strong>{{recipe.title}}</strong>
    </h1>
-</div>
+   <hr>
 
-<hr>
+      <p> {{recipe.description|safe}}</p>
 
-<p> {{recipe.description|safe}}</p>
+   <h1 class='subjects' >Ingredients:</h1>
+      <p>{{recipe.ingredients|safe}}</p>
 
-<h1>Ingredients:</h1>
+   <h1 class='subjects'>Directions:</h1>
+      <p> {{recipe.directions|safe}}</p>
 
-<p>{{recipe.ingredients|safe}}</p>
+   <br>
 
-<h1>Directions:</h1>
-<p> {{recipe.directions|safe}}</p>
-
-<a href="{% url 'index' %}">Back Home</a>
+   <h1>
+      <a href="{% url 'index' %}" class='home-button'>Home</a>
+   </h1>
 
 </main>
+<br>
 {% endblock %}
