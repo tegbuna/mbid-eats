@@ -76,7 +76,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mbideats.wsgi.application'
 
 
-# Database
+# m
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
