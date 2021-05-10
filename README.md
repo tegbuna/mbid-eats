@@ -1,25 +1,32 @@
-# Mbid-Eats (M-bweed-eats) 
+# Mgbid-Eats (M-bweed-eats) 
 
-Mbid-eats is a recipe app that allows a user to catalogue and search delicious Nigerian meals. The app was created to digitize recipes passed to me by my Nigerian husband and his family, who are descendants of the Igbo tribe and come from Mbidi, Nigeria.
+Mgbid-eats is a recipe app that allows a user to catalogue and search delicious Nigerian meals. The app was created to digitize recipes passed to me by my Nigerian husband and his family, who are descendants of the Igbo tribe and come from Mgbidi, Nigeria.
 ___
 ## How To Use: 
-### Click <a href='https://.com/'>here</a> to open.
+### Click <a href='https://mgbideats.herokuapp.com/'>here</a> to open.
 ___
 
 ## Technologies Used:
 - JavaScript
 - Python
 - Django
+- Postgresql
+- Heroku
 ___
 
 ## Trello Board:
-<a href='https://trello.com/b/TtVVWk8U/mbid-eats'>
+![Trello] <a href='https://trello.com/b/TtVVWk8U/mbid-eats'>
 
-## Wireframes:
-![Example](./public/pic.png)
+## Wireframe:
+![Mgbid-eats][Imgur](https://i.imgur.com/3RabutX.png)
 
-## ERD:
-![Example](./public/pic.png)
+## Screenshots:
+
+![Imgur](https://i.imgur.com/hJYTZJ1.png?1)
+
+![Imgur](https://i.imgur.com/6PfoUzg.png?1)
+
+![Imgur](https://i.imgur.com/e9cb0tD.png?1)
 
 ## Repository:
 ### <a href='https://github.com/tegbuna/mbid-eats'> Github
