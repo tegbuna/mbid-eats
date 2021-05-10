@@ -21,11 +21,12 @@ def search(request):
     recipes = Recipe.objects.all()
 
     if 'search' in request.GET:
-        query = request.GET.get('search')
+        query = request.GET.get("search")
         queryset = recipes.filter(Q(title__icontains=query))
 
-    if request.GET.get('breakfast'):
-        results = queryset.filter(Q(topic__title__icontains='breakfast'))
+    if request.GET.get("breakfast"):
+        results = queryset.filter(Q(topic__title__icontains="breakfast"))
+        topic="breakfast"
     elif request.GET.get("appetizers"):
         results = queryset.filter(Q(topic__title__icontains="appetizers"))
         topic="appetizers"
@@ -35,6 +36,9 @@ def search(request):
     elif request.GET.get("dinner"):
         results = queryset.filter(Q(topic__title__icontains="dinner"))
         topic="dinner"
+    elif request.GET.get("soups"):
+        results = queryset.filter(Q(topic__title__icontains="soups"))
+        topic="soups"
     elif request.GET.get("dessert"):
         results = queryset.filter(Q(topic__title__icontains="dessert"))
         topic="dessert"
