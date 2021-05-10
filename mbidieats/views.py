@@ -19,8 +19,9 @@ def index(request):
 
 def search(request):
     recipes = Recipe.objects.all()
+    results = ''
 
-    if 'search' in request.GET:
+    if "search" in request.GET:
         query = request.GET.get("search")
         queryset = recipes.filter(Q(title__icontains=query))
 
