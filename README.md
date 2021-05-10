@@ -4,10 +4,11 @@ Mgbid-eats is a recipe app that allows a user to catalogue and search delicious 
 ___
 ## How To Use: 
 ### Click <a href='https://mgbideats.herokuapp.com/'>here</a> to open.
+### Local <a href='http://localhost:8000/'>here</a>
 ___
 
 ## Technologies Used:
-- JavaScript
+- CSS
 - Python
 - Django
 - Postgresql
