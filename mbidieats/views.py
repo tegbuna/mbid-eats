@@ -57,8 +57,8 @@ def search(request):
         results = paginator.page(paginator.num_pages)
 
     context = {
-        "topic":topic,
         "page":page,
+        "topic":topic,
         "total":total,
         "query":query,
         "results":results,
